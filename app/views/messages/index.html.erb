@@ -4,6 +4,6 @@
 
 <ul id="peeps">
   <% @messages.each do |message| %>
-    <li> <%= message.message_text %> </li>
+    <li> <%= message.message_text %> peeped at: <%= message.peep_time %></li>
   <% end %>
 </ul>
