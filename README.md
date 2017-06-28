@@ -1,4 +1,4 @@
-# Chitter on Rails
+# Chitter on Rails  [![Build Status](https://travis-ci.org/bannastre/chitter-on-rails.svg?branch=master)](https://travis-ci.org/bannastre/chitter-on-rails)
 
 
 ### User Stories
