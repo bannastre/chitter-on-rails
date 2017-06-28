@@ -1,4 +1,9 @@
-<p>
-  <strong>Peep: </strong>
-  <%= @message.message_text %>
-</p>
+<h1>
+  <strong>Peeps: </strong><br>
+</h1>
+
+<ul>
+  <% @messages.each do |message| %>
+    <li> <%= message.message_text %> </li>
+  <% end %>
+</ul>

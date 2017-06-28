@@ -1,16 +1,20 @@
 class MessagesController < ApplicationController
 
+  def index
+    redirect_to "/messages/show"
+  end
+
   def new
   end
 
   def create
     @message = Message.new(message_params)
     @message.save
-    redirect_to @message
+    redirect_to "/messages/show"
   end
 
   def show
-    @message = Message.find(params[:id])
+    @messages = Message.all
   end
 
   private
