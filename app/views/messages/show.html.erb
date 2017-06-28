@@ -1,9 +1,7 @@
 <h1>
-  <strong>Peeps: </strong><br>
+  <strong>Peep <%= @message.id %></strong><br>
 </h1>
 
 <ul>
-  <% @messages.each do |message| %>
-    <li> <%= message.message_text %> </li>
-  <% end %>
+    <li> <%= @message.message_text %> </li>
 </ul>
