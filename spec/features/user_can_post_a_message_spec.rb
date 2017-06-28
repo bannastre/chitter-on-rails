@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'Messaage', type: :feature do
+RSpec.feature 'Message', type: :feature do
   scenario "User can post messages and view them" do
     visit "/messages/new"
     fill_in "Message text", with: "Test message"
