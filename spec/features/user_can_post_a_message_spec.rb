@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.feature 'Message', type: :feature do
+
+  before(:each) { visit root_path(as: User.create(email: "test@test.com", password: "passw0rd")) }
+  
   scenario "User can post messages and view them" do
     visit "/messages/new"
     fill_in "Message text", with: "Test message"
